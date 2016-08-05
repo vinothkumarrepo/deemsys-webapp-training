@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 Jul, 2016, 5:16:56 PM
+    Author     : Deemsys
+*/
+
+.formdiv {
+    margin-top: 40px;
+}
+
+.formgrouping {
+    margin-top: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+.headbutton button {
+    margin-left: 20px;
+}
+
+.formhead button {
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: gray;
+}
+
+#buttongreen {
+    background-color: green;
+}
+
+.actionclass {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.actionclass button {
+    background-color: inherit;
+    padding: 5px 15px 5px 15px;
+    margin: 5px 15px 5px 15px;
+}
+
+.greenbtn {
+    border: 2px green solid;
+}
+
+.greenbtn:hover {
+    background-color: green;
+    color: white;
+}
+
+.redbtn {
+    border: 2px red solid;
+}
+
+.redbtn:hover {
+    background-color: red;
+    color: white;
+}
+
+.fullwidth button {
+    width: 100%;
+}
+
+.radio-toolbar input[type="radio"] {
+    display:none;
+}
+
+.radio-toolbar label {
+    display:inline-block;
+    background-color:inherit;
+    padding:4px 11px;
+    font-family:Arial;
+    font-size:16px;
+}
+
+.check-toolbar input[type="checkbox"]:checked + label {
+    background-color: green;
+    color: white;
+}
+
+.check-toolbar input[type="checkbox"] {
+    display:none;
+}
+
+.check-toolbar label {
+    display:inline-block;
+    background-color:inherit;
+    padding:4px 11px;
+    font-family:Arial;
+    font-size:16px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: green;
+    color: white;
+}

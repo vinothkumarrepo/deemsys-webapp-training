@@ -1,0 +1,38 @@
+<h2>Invoice:</h2>
+
+  <div ng-app="app" ng-controller="InvoiceController as invoice">
+  <div class="col-md-6">
+  <div class="col-md-12">
+      <label for="quantity" class="col-md-4">Quantity:</label>
+      <div class="col-md-4">
+      <input id="quantity" class="form-control" type="number" min="0" ng-model="invoice.qty" required />
+      </div>
+  </div>
+  <div class="col-md-12">
+      <label for="costid" class="col-md-4">Costs:</label> 
+      <div class="col-md-4">
+      <input id="costid" class="form-control" type="number" min="0" ng-model="invoice.cost" required />
+      </div>
+      <div class="col-md-4">
+      <select ng-model="invoice.inCurr" class="form-control">
+      <option ng-repeat="c in invoice.currencies">{{c}}</option>
+      </select>
+      </div>
+   </div>
+  </div>
+   <div class="col-md-12">
+    <h3>Total:</h3>
+    <div class="col-md-7">
+    <table style="width: 100%" class="table-responsive">
+        <tr>
+    <td ng-repeat="c in invoice.currencies">
+      {{invoice.total(c) | currency:c}}
+    </td>
+        </tr>
+    </table>
+    </div>
+    <div class="col-md-7">
+    <button class="btn btn-primary pull-right" ng-click="invoice.pay()">Pay</button>
+    </div>
+   </div>
+    </div>

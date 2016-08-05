@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Jul, 2016, 10:54:49 AM
+    Author     : Deemsys
+*/
+
+.togglebar {
+    display: inline-block;
+}
+
+.sidebr {
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px 45px 15px 15px;
+}
+
+.rtsidebr {
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px 45px 15px 15px;
+}
+
+ul.sidebr {
+    list-style-type: none;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+.topaligntd {
+    vertical-align: top;
+}
+
+a.mnuclass:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+a.mnuclass {
+    opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+    .rthide {
+        visibility: hidden;
+    }
+}

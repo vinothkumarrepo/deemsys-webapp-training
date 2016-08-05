@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Jul, 2016, 5:48:01 PM
+    Author     : Deemsys
+*/
+
+.navbar li:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#bodyDiv {
+    margin-top: 60px;
+}
+
+.top-menus {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.top-menus li {
+    display: inline-block;
+}
+
+
+.txtBoxStyle {
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.iconFA {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.texting {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+    #bodyDiv {
+        margin-left: 260px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    #bodyDiv {
+        margin-left: 10px;
+        margin-top: 120px;
+    }
+}

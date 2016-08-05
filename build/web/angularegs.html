@@ -1,0 +1,95 @@
+        <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNav">
+                      <i class="fa fa-bars bg-primary" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="./">Test Project</a>
+              </div>
+                <ul class="nav navbar-nav navbar-right top-menus">
+                  <li><a href="#/"><i class="fa fa-envelope text-primary"></i><span class="caret text-primary"></span></a></li>
+                  <li><a href="#/"><i class="fa fa-tasks text-primary"></i><span class="caret text-primary"></span></a></li>
+                  <li><a href="#/"><i class="fa fa-bell text-primary"></i><span class="caret text-primary"></span></a></li>
+                  <li><a href="#/"><i class="fa fa-user text-primary"></i><span class="caret text-primary"></span></a></li>
+                </ul>
+        </nav>
+<div style="background-color: skyblue; margin-top: 50px; padding-top: 20px; padding-left: 20px">
+                <h4>Module example</h4>
+                <div ng-controller="egCtrl">
+                    Name in the $scope: <b> {{firstName +' '+lastName}} </b>
+                </div>
+                <hr/>
+<!--***********-->
+                
+                <div ng-init="num1=2;num2=3">
+                    <h4>Directive - ng-init</h4>
+                    Num1: <input type="text" ng-model="num1"><br/>
+                    Num2: <input type="text" ng-model="num2"><br/>
+                    <br/>
+                    Product of Num1 and Num2 is <b>{{num1*num2}}</b>.
+                </div>
+                <hr/>
+<!--***********-->
+
+                
+                <h4>Directive - Repeat</h4>
+                <div ng-controller="egRepeat">
+                    <ul>
+                        <li ng-repeat="n in nums">{{n}}</li>
+                    </ul>
+                </div>
+                <hr/>
+<!--***********-->
+                
+                <h4>Directive - New Tag using "directive"</h4>
+                This new tag calls the return template: <eg-new-tag></eg-new-tag>
+                <hr/>
+<!--***********-->
+
+                
+                <h4>Filter - Upper case / Lower case</h4>
+                <div ng-controller="egFilter">
+                    Changed to lower case: {{egname | lowercase}} <br/>
+                    Changed to upper case: {{egname | uppercase}}
+                </div>
+                <hr/>
+<!--***********-->
+
+                <h4>Filter - Array "filter" function</h4>
+                <div ng-controller="egFilter">
+                    Enter the alphabet to be filtered: <input type="text" ng-model="letter">
+                    <ul>
+                        <li ng-repeat="num in numarray | filter: letter">
+                            {{num}}
+                        </li>
+                    </ul>
+                </div>
+                <hr/>
+<!--***********-->
+
+                <h4>Filter - OrderBy</h4>
+                <div ng-controller="egFilter">
+                    <table style="width: 30%; border: 1px solid; margin-bottom: 10px">
+                        <tr>
+                            <th ng-click="orderNum('nums')">Number</th>
+                            <th ng-click="orderNum('cardinal')">Cardinal</th>
+                            <th ng-click="orderNum('ordinal')">Ordinal</th>
+                        </tr>
+                        <tr ng-repeat="x in ordinals | orderBy: numOrder">
+                            <td>{{x.nums}}</td><td>{{x.cardinal}}</td><td>{{x.ordinal}}</td>
+                        </tr>
+                    </table>
+                    <button ng-click="orderNum('nums')" class="btn btn-default">Order by numbers</button>
+                </div>
+                <hr/>
+<!--***********-->
+
+                <h4>Http Service - Response data</h4>
+                <div ng-controller="egRecords">
+                    <select ng-model="person" ng-options="nm.firstName for nm in ppl">
+                        
+                    </select> <br/>
+                        Last name of the selected person is <b>{{person.lastName}}</b>.
+                </div>
+                <hr/>
+<!--***********-->
+</div>
